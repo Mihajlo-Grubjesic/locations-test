@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Locations/Card LocationsCard 1`] = `
+<div>
+  <div
+    className="location-card"
+  >
+    <span
+      className="primary-label font-medium"
+    >
+      Test name
+    </span>
+    <div
+      className="location-card_item"
+    >
+      <svg
+        className="location-card_item_icon"
+      >
+        users.svg
+      </svg>
+      <span
+        className="secondary-label font-tiny"
+      >
+        22
+      </span>
+    </div>
+    <div
+      className="location-card_item"
+    >
+      <svg
+        className="location-card_item_icon"
+      >
+        timezone.svg
+      </svg>
+      <span
+        className="secondary-label font-tiny"
+      >
+        2:32pm (GMT+01:00)
+      </span>
+    </div>
+    <div
+      className="location-card_item"
+    >
+      <svg
+        className="location-card_item_icon"
+      >
+        views.svg
+      </svg>
+      <span
+        className="secondary-label font-tiny"
+      >
+        views
+      </span>
+    </div>
+  </div>
+</div>
+`;

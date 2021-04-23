@@ -1,0 +1,24 @@
+@import '../../style/variables.scss';
+
+.location-card {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid $primary-border-color;
+  background-color: rgba(246, 246, 246, 0.2);
+}
+
+.location-card_item {
+  display: flex;
+  align-items: center;
+}
+
+.location-card_item_icon {
+  padding-right: 8px;
+  width: 14px;
+  height: 14px;
+  path {
+    fill: rgb(0, 17, 34);
+    opacity: 0.3;
+  }
+}

@@ -1,8 +1,9 @@
-import LocationCard from './components/LocationCard/LocationCard';
+import Locations from './pages/Locations/Locations';
+
 function App() {
   return (
     <div>
-      <LocationCard />
+      <Locations />
     </div>
   );
 }
