@@ -28,6 +28,26 @@ export const useLocations = () => {
     getLocations();
   }, []);
 
-  const data: UseLocationsTypes = { locations, loading, error };
+  const onLocationClick = (locationId: string) => {
+    const increaseViews: LocationsEntity[] | undefined = locations?.map(
+      (location: LocationsEntity) => {
+        if (location.id === locationId) {
+          return {
+            ...location,
+            viewsCount: location.viewsCount + 1,
+          };
+        }
+        return location;
+      },
+    );
+    setLocations(increaseViews);
+  };
+
+  const data: UseLocationsTypes = {
+    locations,
+    loading,
+    error,
+    onLocationClick,
+  };
   return data;
 };

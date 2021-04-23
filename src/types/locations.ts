@@ -11,4 +11,5 @@ export interface UseLocationsTypes {
   locations: LocationsEntity[] | undefined;
   loading: boolean;
   error: boolean;
+  onLocationClick: Function;
 }

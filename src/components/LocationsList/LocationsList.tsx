@@ -9,6 +9,7 @@ const LocationsList = () => {
     locations,
     loading: fetchingLocations,
     error,
+    onLocationClick,
   }: UseLocationsTypes = useLocations();
   if (fetchingLocations)
     return <div className="locations-list_banner">Loading...</div>;
@@ -23,6 +24,7 @@ const LocationsList = () => {
           createdAt={location.createdAt}
           userCount={location.userCount}
           viewsCount={location.viewsCount}
+          onCardClick={() => onLocationClick(location.id)}
         />
       ))}
     </div>

@@ -1,4 +1,5 @@
 import LocationsCard from './LocationsCard';
+import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'Locations/Card',
@@ -12,6 +13,7 @@ export const LocationsCardStory = () => {
         createdAt="2:32pm (GMT+01:00)"
         userCount={22}
         viewsCount={2}
+        onCardClick={action('On card click')}
       />
     </div>
   );
