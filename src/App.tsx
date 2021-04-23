@@ -1,7 +1,10 @@
-import React from 'react';
-
+import LocationCard from './components/LocationCard/LocationCard';
 function App() {
-  return <div>Location list</div>;
+  return (
+    <div>
+      <LocationCard />
+    </div>
+  );
 }
 
 export default App;

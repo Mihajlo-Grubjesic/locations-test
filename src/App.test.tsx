@@ -4,6 +4,6 @@ import App from './App';
 
 test('renders locations page', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Location list/i);
+  const linkElement = screen.getByText(/location card/i);
   expect(linkElement).toBeInTheDocument();
 });
