@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { ReactComponent as TimezoneIcon } from '../../assets/timezone.svg';
 import { ReactComponent as UserCountIcon } from '../../assets/users.svg';
 import { ReactComponent as ViewsIcon } from '../../assets/views.svg';
+import { transformDate } from '../../utils/transformDate';
 
 import './LocationsCard.scss';
 
@@ -22,15 +23,21 @@ const LocationsCard: FC<LocationsCardProps> = ({
       <span className="primary-label font-medium">{name}</span>
       <div className="location-card_item">
         <UserCountIcon className="location-card_item_icon" />
-        <span className="secondary-label font-tiny">{userCount}</span>
+        <span className="primary-label font-tiny text-regular">
+          {userCount} Users
+        </span>
       </div>
       <div className="location-card_item">
         <TimezoneIcon className="location-card_item_icon" />
-        <span className="secondary-label font-tiny">{createdAt}</span>
+        <span className="primary-label font-tiny text-regular">
+          {transformDate(new Date(createdAt))}
+        </span>
       </div>
       <div className="location-card_item">
         <ViewsIcon className="location-card_item_icon" />
-        <span className="secondary-label font-tiny">{viewsCount} Views</span>
+        <span className="primary-label font-tiny text-regular">
+          {viewsCount} Views
+        </span>
       </div>
     </div>
   );

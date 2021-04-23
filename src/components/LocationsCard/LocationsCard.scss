@@ -1,11 +1,14 @@
 @import '../../style/variables.scss';
 
 .location-card {
+  width: 340px;
   display: flex;
   flex-direction: column;
   padding: 25px;
+  margin: 25px;
   border: 1px solid $primary-border-color;
   background-color: rgba(246, 246, 246, 0.2);
+  cursor: pointer;
 }
 
 .location-card_item {
@@ -19,7 +22,6 @@
   height: 14px;
 
   path {
-    fill: rgb(0, 17, 34);
-    opacity: 0.3;
+    fill: rgba(0, 17, 34, 0.3);
   }
 }

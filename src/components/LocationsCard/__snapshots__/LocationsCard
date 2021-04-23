@@ -19,9 +19,10 @@ exports[`Storyshots Locations/Card LocationsCard 1`] = `
         users.svg
       </svg>
       <span
-        className="secondary-label font-tiny"
+        className="primary-label font-tiny text-regular"
       >
         22
+         Users
       </span>
     </div>
     <div
@@ -33,9 +34,9 @@ exports[`Storyshots Locations/Card LocationsCard 1`] = `
         timezone.svg
       </svg>
       <span
-        className="secondary-label font-tiny"
+        className="primary-label font-tiny text-regular"
       >
-        2:32pm (GMT+01:00)
+        NaN:NaNam (GMTNaN:00)
       </span>
     </div>
     <div
@@ -47,9 +48,10 @@ exports[`Storyshots Locations/Card LocationsCard 1`] = `
         views.svg
       </svg>
       <span
-        className="secondary-label font-tiny"
+        className="primary-label font-tiny text-regular"
       >
-        views
+        2
+         Views
       </span>
     </div>
   </div>
