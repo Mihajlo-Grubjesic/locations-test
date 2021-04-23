@@ -4,6 +4,9 @@ exports[`Storyshots Locations/Card LocationsCard 1`] = `
 <div>
   <div
     className="location-card"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
   >
     <span
       className="primary-label font-medium"
