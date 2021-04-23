@@ -9,11 +9,13 @@ interface LocationsCardProps {
   name: string;
   createdAt: string;
   userCount: number;
+  viewsCount: number;
 }
 const LocationsCard: FC<LocationsCardProps> = ({
   name,
   createdAt,
   userCount,
+  viewsCount,
 }) => {
   return (
     <div className="location-card">
@@ -28,7 +30,7 @@ const LocationsCard: FC<LocationsCardProps> = ({
       </div>
       <div className="location-card_item">
         <ViewsIcon className="location-card_item_icon" />
-        <span className="secondary-label font-tiny">views</span>
+        <span className="secondary-label font-tiny">{viewsCount} Views</span>
       </div>
     </div>
   );

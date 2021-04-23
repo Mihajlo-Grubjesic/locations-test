@@ -11,6 +11,7 @@ export const LocationsCardStory = () => {
         name="Test name"
         createdAt="2:32pm (GMT+01:00)"
         userCount={22}
+        viewsCount={2}
       />
     </div>
   );
