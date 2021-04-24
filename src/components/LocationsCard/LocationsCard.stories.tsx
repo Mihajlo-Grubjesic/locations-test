@@ -1,5 +1,4 @@
 import LocationsCard from './LocationsCard';
-import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'Locations/Card',
