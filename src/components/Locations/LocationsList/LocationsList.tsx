@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { useLocations } from '../../hooks/useLocations';
+import { Redirect, useParams } from 'react-router-dom';
+import { useLocations } from '../../../hooks/useLocations';
 import LocationsCard from '../LocationsCard/LocationsCard';
-import { UseLocationsTypes, LocationsEntity } from '../../types/locations';
+import LocationsModal from '../LocationsModal/LocationsModal';
+import { UseLocationsTypes, LocationsEntity } from '../../../types/locations';
+import { ParamTypes } from '../../../types/router';
 
 import './LocationsList.scss';
 
@@ -11,15 +12,12 @@ const LocationsList = () => {
     locations,
     loading: fetchingLocations,
     error,
-    onLocationClick,
   }: UseLocationsTypes = useLocations();
-  const { locationId }: any = useParams();
 
-  useEffect(() => {
-    if (locationId) {
-      onLocationClick(locationId);
-    }
-  }, [locationId]);
+  const { locationId } = useParams<ParamTypes>();
+  const activeLocation = locations?.find(
+    (location: LocationsEntity) => location.id === locationId,
+  );
 
   if (fetchingLocations)
     return <div className="locations-list_banner">Loading...</div>;
@@ -37,6 +35,11 @@ const LocationsList = () => {
           viewsCount={location.viewsCount}
         />
       ))}
+      {activeLocation ? (
+        <LocationsModal location={activeLocation} />
+      ) : (
+        <Redirect to="/locations" />
+      )}
     </div>
   );
 };

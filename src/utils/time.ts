@@ -1,4 +1,4 @@
-export const transformDate = (date: Date) => {
+export const transformTime = (date: Date) => {
   const hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
   const minutes = date.getMinutes();
   const timeZoneOffsetHours = date.getTimezoneOffset() / 60;

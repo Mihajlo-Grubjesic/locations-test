@@ -1,0 +1,20 @@
+.locations-modal {
+  padding: 16px 25px;
+}
+
+.location-modal-header {
+  padding-bottom: 32px;
+}
+
+.location-modal-content__description {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.location-modal-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 14px 25px;
+}

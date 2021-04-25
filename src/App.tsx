@@ -1,5 +1,6 @@
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import Locations from './pages/Locations/Locations';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         </Route>
         <Route path="/locations/:locationId?">
           <Locations />
+        </Route>
+        <Route path="*">
+          <NotFound />
         </Route>
       </Switch>
     </BrowserRouter>

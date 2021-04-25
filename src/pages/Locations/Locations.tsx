@@ -1,5 +1,5 @@
-import LocationsHeader from '../../components/LocationsHeader/LocationsHeader';
-import LocationsList from '../../components/LocationsList/LocationsList';
+import LocationsHeader from '../../components/Locations/LocationsHeader/LocationsHeader';
+import LocationsList from '../../components/Locations/LocationsList/LocationsList';
 
 const Locations = () => {
   return (

@@ -1,4 +1,4 @@
-@import '../../style/variables.scss';
+@import '../../../style/variables.scss';
 
 .location-card {
   position: relative;
@@ -13,21 +13,6 @@
 
   &:hover {
     background-color: rgb(246, 246, 246);
-  }
-}
-
-.location-card_item {
-  display: flex;
-  align-items: center;
-}
-
-.location-card_item_icon {
-  padding-right: 8px;
-  width: 14px;
-  height: 14px;
-
-  path {
-    fill: rgba(0, 17, 34, 0.3);
   }
 }
 
