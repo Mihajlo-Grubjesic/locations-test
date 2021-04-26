@@ -5,8 +5,6 @@ After project is downloaded, run `npm install`.
 
 ## Available Scripts
 
-In the project directory, you can run t start application in development mode:
-
 ### `npm start`
 
 Runs the app in the development mode.
