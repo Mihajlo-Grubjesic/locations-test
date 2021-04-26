@@ -9,6 +9,14 @@ export interface LocationsEntity {
 
 export interface UseLocationsTypes {
   locations: LocationsEntity[] | undefined;
+  onLocationClick: Function;
+  loading: boolean;
+  error: boolean;
+}
+
+export interface UseLocationsContextTypes {
+  locations: LocationsEntity[] | undefined;
+  onLocationClick: Function;
   loading: boolean;
   error: boolean;
 }
