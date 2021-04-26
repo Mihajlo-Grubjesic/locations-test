@@ -6,6 +6,7 @@ import PrimaryButton from '../../Button/PrimaryButton/PrimaryButton';
 import { ReactComponent as TimezoneIcon } from '../../../assets/timezone.svg';
 import { ReactComponent as UserCountIcon } from '../../../assets/users.svg';
 import { ReactComponent as ViewsIcon } from '../../../assets/views.svg';
+import { ReactComponent as CloseIcon } from '../../../assets/close.svg';
 import { LocationsEntity } from '../../../types/locations';
 import { transformTime } from '../../../utils/time';
 import './LocationsModal.scss';
@@ -23,6 +24,10 @@ const LocationsModal: FC<LocationsModalProps> = ({ location }) => {
           <span className="primary-label font-small text-semibold">
             {location.name}
           </span>
+          <CloseIcon
+            className="locations-modal_close_btn"
+            onClick={() => history.push('/locations')}
+          />
         </div>
         <div className="location-modal-content">
           <LocationItem

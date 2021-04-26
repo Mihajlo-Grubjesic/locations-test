@@ -3,6 +3,9 @@
 }
 
 .location-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding-bottom: 32px;
 }
 
@@ -10,6 +13,14 @@
   padding-top: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.locations-modal_close_btn {
+  cursor: pointer;
+
+  path {
+    fill: rgba(0, 17, 34, 0.3);
+  }
 }
 
 .location-modal-footer {

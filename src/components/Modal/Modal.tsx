@@ -11,7 +11,7 @@ const Modal: FC<ModalProps> = ({ children }) => {
     <>
       <div className="modal-backdrop"></div>
       <div className="modal">
-        <div>{children}</div>
+        <div className="modal-content">{children}</div>
       </div>
     </>,
     document.querySelector('#modal') as any,

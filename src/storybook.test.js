@@ -1,9 +1,11 @@
 import path from 'path';
+import ReactDOM from 'react-dom';
 
 import initStoryshots from '@storybook/addon-storyshots';
 import { create, act } from 'react-test-renderer';
 
 const waitForNextTick = () => new Promise((resolve) => setTimeout(resolve));
+ReactDOM.createPortal = (node) => node;
 
 initStoryshots({
   asyncJest: true,
