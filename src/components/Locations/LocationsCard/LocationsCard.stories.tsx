@@ -10,7 +10,7 @@ export const LocationsCardStory = () => {
       <LocationsCard
         id="1"
         name="Test name"
-        createdAt="2:32pm (GMT+01:00)"
+        createdAt="2021-03-05T09:10:35.462Z"
         userCount={22}
         viewsCount={2}
       />

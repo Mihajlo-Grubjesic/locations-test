@@ -1,14 +1,14 @@
-import PrimaryButton from './PrimaryButton';
+import Button from './Button';
 import { action } from '@storybook/addon-actions';
 
 export default {
-  title: 'Components/PrimaryButton',
+  title: 'Components/Button',
 };
 
 export const PrimaryButtonStory = () => {
   return (
     <div>
-      <PrimaryButton label="OK" onClick={action('on click')} />
+      <Button buttonType="primary" label="OK" onClick={action('on click')} />
     </div>
   );
 };

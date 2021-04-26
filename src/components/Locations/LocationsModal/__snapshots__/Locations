@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Locations/LocationsModal LocationsModal 1`] = `
+exports[`Storyshots Locations/LocationsModal Modal 1`] = `
 <div>
   <div
     className="modal-backdrop"
@@ -32,47 +32,49 @@ exports[`Storyshots Locations/LocationsModal LocationsModal 1`] = `
         <div
           className="location-modal-content"
         >
-          <div
-            className="location-card_item"
-          >
-            <svg
-              className="location-card_item_icon"
+          <div>
+            <div
+              className="location-card_item"
             >
-              users.svg
-            </svg>
-            <span
-              className="primary-label font-tiny text-regular"
+              <svg
+                className="location-card_item_icon"
+              >
+                users.svg
+              </svg>
+              <span
+                className="primary-label font-tiny text-regular"
+              >
+                6221 Users
+              </span>
+            </div>
+            <div
+              className="location-card_item"
             >
-              6221 Users
-            </span>
-          </div>
-          <div
-            className="location-card_item"
-          >
-            <svg
-              className="location-card_item_icon"
+              <svg
+                className="location-card_item_icon"
+              >
+                timezone.svg
+              </svg>
+              <span
+                className="primary-label font-tiny text-regular"
+              >
+                9:10am (GMT-1:00)
+              </span>
+            </div>
+            <div
+              className="location-card_item"
             >
-              timezone.svg
-            </svg>
-            <span
-              className="primary-label font-tiny text-regular"
-            >
-              9:10am (GMT-1:00)
-            </span>
-          </div>
-          <div
-            className="location-card_item"
-          >
-            <svg
-              className="location-card_item_icon"
-            >
-              views.svg
-            </svg>
-            <span
-              className="primary-label font-tiny text-regular"
-            >
-              1 Views
-            </span>
+              <svg
+                className="location-card_item_icon"
+              >
+                views.svg
+              </svg>
+              <span
+                className="primary-label font-tiny text-regular"
+              >
+                1 Views
+              </span>
+            </div>
           </div>
           <div
             className="location-modal-content__description"
@@ -94,7 +96,7 @@ exports[`Storyshots Locations/LocationsModal LocationsModal 1`] = `
           className="location-modal-footer"
         >
           <button
-            className="primary-button"
+            className="button primary-button"
             onClick={[Function]}
           >
             Done

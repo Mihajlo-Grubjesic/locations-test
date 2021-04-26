@@ -1,12 +1,7 @@
 import { FC, useState } from 'react';
 import AppLInk from '../../Link/Link';
-import LocationItem from '../LocationsItem/LocationsItem';
-import { ReactComponent as TimezoneIcon } from '../../../assets/timezone.svg';
-import { ReactComponent as UserCountIcon } from '../../../assets/users.svg';
-import { ReactComponent as ViewsIcon } from '../../../assets/views.svg';
 import { ReactComponent as EditIcon } from '../../../assets/edit.svg';
-
-import { transformTime } from '../../../utils/time';
+import LocationDetails from '../LocationDetails/LocationDetails';
 
 import './LocationsCard.scss';
 
@@ -37,12 +32,11 @@ const LocationsCard: FC<LocationsCardProps> = ({
           </div>
         )}
         <span className="primary-label font-medium">{name}</span>
-        <LocationItem Icon={UserCountIcon} label={`${userCount} Users`} />
-        <LocationItem
-          Icon={TimezoneIcon}
-          label={transformTime(new Date(createdAt))}
+        <LocationDetails
+          userCount={userCount}
+          createdAt={createdAt}
+          viewsCount={viewsCount}
         />
-        <LocationItem Icon={ViewsIcon} label={`${viewsCount} Views`} />
       </div>
     </AppLInk>
   );

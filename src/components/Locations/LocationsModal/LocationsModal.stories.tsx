@@ -14,5 +14,5 @@ export const LocationModalStory = () => {
 };
 
 LocationModalStory.story = {
-  name: 'LocationsModal',
+  name: 'Modal',
 };

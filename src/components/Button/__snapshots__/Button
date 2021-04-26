@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/PrimaryButton PrimaryButton 1`] = `
+exports[`Storyshots Components/Button PrimaryButton 1`] = `
 <div>
   <button
-    className="primary-button"
+    className="button primary-button"
     onClick={[Function]}
   >
     OK

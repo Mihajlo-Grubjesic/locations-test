@@ -17,47 +17,49 @@ exports[`Storyshots Locations/Card LocationsCard 1`] = `
       >
         Test name
       </span>
-      <div
-        className="location-card_item"
-      >
-        <svg
-          className="location-card_item_icon"
+      <div>
+        <div
+          className="location-card_item"
         >
-          users.svg
-        </svg>
-        <span
-          className="primary-label font-tiny text-regular"
+          <svg
+            className="location-card_item_icon"
+          >
+            users.svg
+          </svg>
+          <span
+            className="primary-label font-tiny text-regular"
+          >
+            22 Users
+          </span>
+        </div>
+        <div
+          className="location-card_item"
         >
-          22 Users
-        </span>
-      </div>
-      <div
-        className="location-card_item"
-      >
-        <svg
-          className="location-card_item_icon"
+          <svg
+            className="location-card_item_icon"
+          >
+            timezone.svg
+          </svg>
+          <span
+            className="primary-label font-tiny text-regular"
+          >
+            9:10am (GMT-1:00)
+          </span>
+        </div>
+        <div
+          className="location-card_item"
         >
-          timezone.svg
-        </svg>
-        <span
-          className="primary-label font-tiny text-regular"
-        >
-          NaN:NaNam (GMTNaN:00)
-        </span>
-      </div>
-      <div
-        className="location-card_item"
-      >
-        <svg
-          className="location-card_item_icon"
-        >
-          views.svg
-        </svg>
-        <span
-          className="primary-label font-tiny text-regular"
-        >
-          2 Views
-        </span>
+          <svg
+            className="location-card_item_icon"
+          >
+            views.svg
+          </svg>
+          <span
+            className="primary-label font-tiny text-regular"
+          >
+            2 Views
+          </span>
+        </div>
       </div>
     </div>
   </a>

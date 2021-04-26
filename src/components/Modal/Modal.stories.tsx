@@ -19,5 +19,5 @@ export const LocationListStory = () => {
 };
 
 LocationListStory.story = {
-  name: 'Modal',
+  name: 'TextModal',
 };

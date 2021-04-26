@@ -1,14 +1,10 @@
 import React, { FC } from 'react';
 import { useHistory } from 'react-router-dom';
 import Modal from '../../Modal/Modal';
-import LocationItem from '../LocationsItem/LocationsItem';
-import PrimaryButton from '../../Button/PrimaryButton/PrimaryButton';
-import { ReactComponent as TimezoneIcon } from '../../../assets/timezone.svg';
-import { ReactComponent as UserCountIcon } from '../../../assets/users.svg';
-import { ReactComponent as ViewsIcon } from '../../../assets/views.svg';
+import Button from '../../Button/Button';
 import { ReactComponent as CloseIcon } from '../../../assets/close.svg';
+import LocationDetails from '../LocationDetails/LocationDetails';
 import { LocationsEntity } from '../../../types/locations';
-import { transformTime } from '../../../utils/time';
 import './LocationsModal.scss';
 
 interface LocationsModalProps {
@@ -30,17 +26,10 @@ const LocationsModal: FC<LocationsModalProps> = ({ location }) => {
           />
         </div>
         <div className="location-modal-content">
-          <LocationItem
-            Icon={UserCountIcon}
-            label={`${location.userCount} Users`}
-          />
-          <LocationItem
-            Icon={TimezoneIcon}
-            label={transformTime(new Date(location.createdAt))}
-          />
-          <LocationItem
-            Icon={ViewsIcon}
-            label={`${location.viewsCount} Views`}
+          <LocationDetails
+            userCount={location.userCount}
+            createdAt={location.createdAt}
+            viewsCount={location.viewsCount}
           />
           <div className="location-modal-content__description">
             <span className="font-tiny text-semibold">Description</span>
@@ -48,7 +37,8 @@ const LocationsModal: FC<LocationsModalProps> = ({ location }) => {
           </div>
         </div>
         <div className="location-modal-footer">
-          <PrimaryButton
+          <Button
+            buttonType="primary"
             label="Done"
             onClick={() => history.push('/locations')}
           />

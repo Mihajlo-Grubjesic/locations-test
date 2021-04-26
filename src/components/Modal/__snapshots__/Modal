@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Components/Modal Modal 1`] = `
+exports[`Storyshots Components/Modal TextModal 1`] = `
 <div>
   <div
     className="modal-backdrop"
