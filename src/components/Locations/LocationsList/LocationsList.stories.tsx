@@ -1,4 +1,5 @@
 import LocationsList from './LocationsList';
+import { LocationsProvider } from '../../../context/LocationsContext';
 
 export default {
   title: 'Locations/List',
@@ -6,9 +7,11 @@ export default {
 
 export const LocationListStory = () => {
   return (
-    <div>
-      <LocationsList />
-    </div>
+    <LocationsProvider>
+      <div>
+        <LocationsList />
+      </div>
+    </LocationsProvider>
   );
 };
 
